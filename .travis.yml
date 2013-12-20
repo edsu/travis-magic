@@ -3,9 +3,14 @@ language:
 python:
 - 2.7
 install:
-- pip install -r requirements.txt
+#- sudo apt-get install gcc
+#- wget ftp://ftp.astron.com/pub/file/file-5.12.tar.gz
+#- tar xvfz file-5.12.tar.gz
+#- cd file-5.12
+#- ./configure --prefix ../local
+#- make install
 - sudo apt-get update
-- sudo apt-get install libmagic1
+- sudo apt-get install libmagic-dev file
 script:
 - python test.py
 
