@@ -11,6 +11,7 @@ install:
 #- make install
 - sudo apt-get update
 - sudo apt-get install libmagic-dev file
+- pip install python-magic
 script:
 - python test.py
 
