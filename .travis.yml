@@ -9,10 +9,9 @@ install:
 #- cd file-5.12
 #- ./configure --prefix ../local
 #- make install
-- sudo apt-get update
-- sudo apt-get install libmagic-dev file
 - pip install python-magic
 script:
+- file --mime-type data/word.doc
 - python test.py
 
 
