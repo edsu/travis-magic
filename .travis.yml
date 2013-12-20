@@ -9,6 +9,7 @@ install:
 - cd file-5.12
 - ./configure 
 - sudo make install
+- sudo ldconfig
 - pip install python-magic
 - cd ..
 script:
